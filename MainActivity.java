@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -45,9 +45,6 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                         .setAction("Action", null).show();*/
             }
         });
-
-
-        insertInventory();
 
         // Find the ListView which will be populated with the pet data
         ListView inventoryListView = (ListView) findViewById(R.id.list);
